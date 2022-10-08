@@ -1,0 +1,300 @@
+* {
+    margin: 0px auto;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0px auto;
+    max-width: 1600px;
+}
+
+header {
+    margin: 0px auto;
+    max-width: 1600px;
+    height: 105px;
+    justify-content: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-inline-start: 0px;
+    margin: 0px auto;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    background-color: #00693E;
+    max-width: 1600px;
+
+
+}
+
+header nav {
+    position: fixed;
+    width: 100% ;
+    left: 0;
+    transition: 1.3s;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav  ul li {
+    padding:10px 40px 10px 40px;
+    font-weight:bolder;
+    transition: 1.5s;
+}
+header nav  ul li:hover {
+    border-bottom: 1px solid white;
+    transition: 7s;
+}
+
+main {
+    max-width: 1440px ;
+    margin: 0px auto;
+    color: black;
+    height: 100vh;
+}
+
+
+a button:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+#burger {
+    width: 50px;
+}
+
+#burger, [for = burger] {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 1230px) {
+    header nav ul li {
+        font-size: 16px;
+        font-weight: bold;
+        padding:10px 30px 10px 30px;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    header nav ul li {
+        font-size: 15px;
+        font-weight: bold;
+        padding:10px 20px 10px 20px;
+    }
+    .advantages_blocks div {
+        border: 2px solid black;
+        width: 40% !important;
+        text-align: center;
+        margin: 15px;
+    }
+}
+
+.material-icons {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    header nav ul li {
+        font-size: 14.8px;
+        font-weight: bold;
+        padding:10px;
+    }   
+
+}
+
+@media screen and (max-width: 750px) {
+    
+}
+
+
+@media screen and (max-width: 700px) {
+    header nav ul li {
+        font-size: 14px;
+        font-weight: bold;
+        padding:5px;
+    } 
+}
+
+
+@media screen and (max-width: 652px) {
+    header nav ul li {
+        font-size: 15px;
+        font-weight: bold;
+        padding:5px;
+    } 
+    #logo {
+        width: 80px !important;
+    }
+    nav ul li {
+        display: none;
+    }
+    [for = burger] {
+        display: block;
+        position: fixed;
+        width: 30px;
+        text-align: center;
+        right: 50px;
+        top: 15px;
+        z-index: 11;
+        transition: 1.3s;
+    }
+    #logo {
+        margin-left: 20px;
+    }
+    #burger:checked + label + nav ul li {
+        display: block;
+        transition: 1.3s;
+    }
+    header nav ul {
+        display: block;
+        text-align: center;
+        transition: 1.3s;
+    }
+    header nav ul li:nth-last-child() {
+        margin-bottom: 5px;
+    }
+    .price_header {
+        margin-bottom: 500;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    header nav ul li {
+        font-size:15px;
+        font-weight: bold;
+        padding:3px 20px;
+    } 
+    #logo {
+        width: 75px !important;
+    }
+    main {
+        min-width: 420px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+
+}
+
+
+@media screen and (max-width: 400px) {
+    .header_bg_photo {
+        font-size: 20px;
+        letter-spacing: 1.2px
+    }
+}
+.content{
+    margin: 0px auto;
+    
+    text-align: center;
+}
+/* form{
+    border: 1px solid black;
+    margin: 0 20%;    
+} */
+
+
+.content_title h1{
+    text-align: center;
+}
+
+
+.form_first label, button{ 
+    font-weight: bold;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    
+    /* display: flex;
+    align-items: center; */
+}
+.form_first input, textarea{
+    font-size: 16px;
+    font-family: 'Montserrat';
+    text-align: center;
+    width: 350px;
+    height: 35px;
+    background: rgba(0, 105, 62, 0.09);
+    border-radius: 135px;
+    border:none ;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.form_second label input{
+    /* border: 1px solid black; */
+    margin: 0px 25%;
+    text-align: left;
+    padding-left: 8%;
+
+}
+.form_second h3{
+    padding-left: -8%;
+    text-align: center;
+}
+
+.custom_checkbox {  
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  .custom_checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+  .custom_checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 20%;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+  .custom_checkbox:checked+label::before {
+    
+    background-color: #00693d9e;
+    background-image: url(/img/иконки/V.png);
+}
+
+
+  /* стили при наведении курсора на checkbox */
+
+.custom_checkbox:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #00693d5b;
+    background-color: #00693d33;
+  }
+
+  button{
+    width: 200px;
+    height: 50px;
+    background-color: #00693d33;
+    border: none;
+    border-radius: 135px;
+    
+  }
+  button:hover{
+    background-color: #00693d69;
+    border: none;
+  }
+  button:active{
+    background-color: #00693db0;
+    border: none;
+  }
